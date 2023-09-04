@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "test"
+client_id = "efb6df672606cbd95add3cb9c68673b3"
+application_url = "https://remark-artificial-mel-wrestling.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_customers,write_inventory"
+
+[auth]
+redirect_urls = [
+  "https://remark-artificial-mel-wrestling.trycloudflare.com/auth/callback",
+  "https://remark-artificial-mel-wrestling.trycloudflare.com/auth/shopify/callback",
+  "https://remark-artificial-mel-wrestling.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-3b0be568.myshopify.com"
